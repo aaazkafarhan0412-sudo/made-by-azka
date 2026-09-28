@@ -1,0 +1,330 @@
+@import "tailwindcss";
+
+/* ============================================================================
+   MADE.BYAZKA — DESIGN TOKENS
+   ----------------------------------------------------------------------------
+   ✏️ EDIT EVERYTHING BELOW TO RE-SKIN THE WHOLE SITE.
+   Colours → @theme  |  Type → --font-display / --font-body  |  Motion → keyframes
+   ============================================================================ */
+
+@theme {
+  /* ---- TYPE ------------------------------------------------------------ */
+  /* Display face: elegant, editorial. Body face: clean geometric sans.      */
+  --font-display: "Fraunces", "Playfair Display", ui-serif, Georgia, serif;
+  --font-body: "Jost", "Avenir Next", ui-sans-serif, system-ui, sans-serif;
+
+  /* ---- COLOUR PALETTE (feminine · premium · professional) -------------- */
+  --color-cream: #fbf6f1; /* page background            */
+  --color-shell: #f5ebe2; /* warm beige panel           */
+  --color-petal: #f9eae7; /* soft blush wash            */
+  --color-blush: #efd5d1; /* blush pink                 */
+  --color-rose: #cf9d97; /* dusty rose                 */
+  --color-mauve: #a17e9b; /* mauve / lavender accent    */
+  --color-lav: #cdb9d8; /* light lavender               */
+  --color-plum: #4e2b45; /* deep plum — primary accent   */
+  --color-plum-soft: #6b3f60; /* plum hover state        */
+  --color-ink: #241c24; /* charcoal plum — body text    */
+  --color-mist: #6f5f6b; /* muted text                   */
+  --color-gold: #bd9a5f; /* rare metallic accent         */
+  --color-line: #e6d7cd; /* hairline borders             */
+  --color-paper: #fffdfa; /* card surface               */
+
+  /* ---- MOTION ---------------------------------------------------------- */
+  --ease-silk: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-marquee-slow: marquee 64s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-float-slow: float 11s ease-in-out infinite;
+  --animate-kenburns: kenburns 22s ease-in-out infinite alternate;
+  --animate-spin-slow: spin 26s linear infinite;
+  --animate-pulse-ring: pulseRing 2.8s ease-out infinite;
+}
+
+/* ---- KEYFRAMES -------------------------------------------------------- */
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0) rotate(-1.2deg);
+  }
+}
+@keyframes kenburns {
+  from {
+    transform: scale(1.02) translate3d(0, 0, 0);
+  }
+  to {
+    transform: scale(1.13) translate3d(1.5%, -2%, 0);
+  }
+}
+@keyframes pulseRing {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-rose) 55%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 14px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+@keyframes shimmer {
+  from {
+    background-position: -140% 0;
+  }
+  to {
+    background-position: 240% 0;
+  }
+}
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0) scale(0.975);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes barGrow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* ---- BASE ------------------------------------------------------------- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-weight: 350;
+    letter-spacing: 0.005em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    letter-spacing: -0.018em;
+    text-wrap: balance;
+  }
+  ::selection {
+    background: var(--color-blush);
+    color: var(--color-plum);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-plum);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-shell);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--color-mauve) 55%, var(--color-shell));
+    border-radius: 99px;
+    border: 3px solid var(--color-shell);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-plum);
+  }
+}
+
+/* ---- REUSABLE PIECES -------------------------------------------------- */
+@layer components {
+  /* Fine film grain laid over the whole page for a printed, tactile feel */
+  .grain-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    pointer-events: none;
+    opacity: 0.4;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.34'/%3E%3C/svg%3E");
+  }
+
+  /* Arched (cathedral) crop — the signature shape of this identity */
+  .shape-arch {
+    border-radius: 999px 999px 1.25rem 1.25rem;
+  }
+  .shape-arch-soft {
+    border-radius: 46% 46% 12px 12px / 30% 30% 6px 6px;
+  }
+  .shape-petal {
+    border-radius: 58% 42% 38% 62% / 47% 55% 45% 53%;
+  }
+
+  .hairline {
+    border-color: var(--color-line);
+  }
+
+  /* Placeholder shimmer shown while an image loads */
+  .img-shimmer {
+    background: linear-gradient(
+      100deg,
+      var(--color-shell) 22%,
+      var(--color-petal) 42%,
+      var(--color-shell) 62%
+    );
+    background-size: 220% 100%;
+    animation: shimmer 1.6s linear infinite;
+  }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.45s var(--ease-silk);
+  }
+  .link-underline:hover,
+  .link-underline:focus-visible {
+    background-size: 100% 1px;
+  }
+
+  .shadow-soft {
+    box-shadow:
+      0 1px 2px rgba(78, 43, 69, 0.04),
+      0 18px 40px -24px rgba(78, 43, 69, 0.35);
+  }
+  .shadow-lift {
+    box-shadow:
+      0 2px 6px rgba(78, 43, 69, 0.06),
+      0 40px 70px -34px rgba(78, 43, 69, 0.45);
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+  }
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px color-mix(in srgb, var(--color-plum) 45%, transparent);
+  }
+  .writing-vertical {
+    writing-mode: vertical-rl;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  /* entrance animations (used by filters, tiles and dialogs) */
+  .pop-in {
+    animation: popIn 0.65s var(--ease-silk) both;
+  }
+  .fade-in {
+    animation: fadeIn 0.4s var(--ease-soft) both;
+  }
+  .modal-pop {
+    animation: popIn 0.5s var(--ease-silk) both;
+  }
+}
+
+/* ---- SCROLL REVEAL PRIMITIVES ----------------------------------------- */
+@layer components {
+  .reveal {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+    transition:
+      opacity 0.9s var(--ease-silk),
+      transform 1s var(--ease-silk),
+      clip-path 1.1s var(--ease-silk);
+    will-change: opacity, transform;
+  }
+  .reveal-mask {
+    clip-path: inset(0 0 100% 0);
+    transform: none;
+    opacity: 1;
+  }
+  .reveal-scale {
+    transform: scale(0.955);
+  }
+  .reveal-left {
+    transform: translate3d(-32px, 0, 0);
+  }
+  .reveal-right {
+    transform: translate3d(32px, 0, 0);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+    clip-path: inset(0 0 -12% 0);
+  }
+  /* Line-mask heading reveal: each line slides up from behind its own mask */
+  .line-mask {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 0.08em;
+    margin-bottom: -0.08em;
+  }
+  .line-mask > span {
+    display: block;
+    transform: translate3d(0, 110%, 0) rotate(2deg);
+    transition: transform 1.05s var(--ease-silk);
+  }
+  .line-mask.is-visible > span {
+    transform: none;
+  }
+}
+
+/* ---- ACCESSIBILITY: reduced motion ------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .reveal,
+  .line-mask > span {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+}
