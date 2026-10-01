@@ -330,10 +330,10 @@ export const showcaseCategories = [
 ];
 
 export const showcase: ShowcaseItem[] = [
-  { id: "s1", title: "Lumière identity board", category: "Branding", image: brandImg, alt: "Concept brand identity board with logotype and swatches", ratio: "4 / 3", note: "Concept identity · 2026", link: brand.instagramUrl },
+  { id: "s1", title: "Lumière identity board", category: "Branding", image: brandImg, alt: "Concept brand identity board with logotype and swatches", ratio: "4 / 3", note: "Concept identity · 2026", link: "https://www.instagram.com/p/Db6VGysuh_e/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
   { id: "s2", title: "Bloom poster study", category: "Poster", image: posterImg, alt: "Typographic poster series in blush and plum", ratio: "3 / 4", note: "Typography practice · 2026", link: brand.instagramUrl },
   { id: "s3", title: "Petal & Co. grid concept", category: "Social Media", image: socialImg, alt: "Nine-tile Instagram grid design concept for a beauty brand", ratio: "1 / 1", note: "9-tile grid · 2026", link: brand.instagramUrl },
-  { id: "s4", title: "Wildflower illustration", category: "Illustration", image: illustrationImg, alt: "Hand-drawn botanical illustrations in dusty rose and plum", ratio: "3 / 4", note: "Ink & colour study · 2026", link: brand.instagramUrl },
+  { id: "s4", title: "Wildflower illustration", category: "Illustration", image: illustrationImg, alt: "Hand-drawn botanical illustrations in dusty rose and plum", ratio: "3 / 4", note: "Ink & colour study · 2026", link: "https://www.instagram.com/p/Db6VGysuh_e/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
   { id: "s5", title: "Rosé Atelier packaging", category: "Packaging", image: packagingImg, alt: "Blush packaging cartons with foil monogram concept", ratio: "4 / 3", note: "Packaging concept · 2026", link: brand.instagramUrl },
   { id: "s6", title: "Muse app screens", category: "UI / UX", image: uiuxImg, alt: "App screens and components on a mauve artboard", ratio: "4 / 3", note: "Figma learning project · 2026", link: brand.instagramUrl },
   { id: "s7", title: "Stationery suite", category: "Branding", image: px(5706026, 900, 1150), alt: "Minimal stationery mockup on a pastel pink surface", ratio: "4 / 5", note: "Cards & letterhead · 2026", link: brand.instagramUrl },
@@ -343,11 +343,10 @@ export const showcase: ShowcaseItem[] = [
   { id: "s11", title: "Skincare label concept", category: "Packaging", image: px(8015791, 1100, 850), alt: "Minimal skincare packaging in white and blush", ratio: "4 / 3", note: "Label design · 2026", link: brand.instagramUrl },
   { id: "s12", title: "Watercolour studies", category: "Illustration", image: px(25752160, 900, 1150), alt: "Soft pastel watercolour abstract painting", ratio: "4 / 5", note: "Texture experiments · 2026", link: brand.instagramUrl },
   { id: "s13", title: "App UI in context", category: "UI / UX", image: px(3850204, 900, 1150), alt: "Hand holding a phone with an app interface", ratio: "4 / 5", note: "Mobile UI practice · 2026", link: brand.instagramUrl },
-  { id: "s14", title: "Editorial layout study", category: "Poster", image: px(5490083, 1100, 850), alt: "Notebook and dried flowers flat lay for editorial layout", ratio: "4 / 3", note: "Layout practice · 2026", link: brand.instagramUrl },
-  { id: "s15", title: "Carousel template kit", category: "Social Media", image: px(7167825, 1100, 850), alt: "Cosy flat lay used in a social carousel design", ratio: "4 / 3", note: "Canva templates · 2026", link: brand.instagramUrl },
-  { id: "s16", title: "Lettering on walls", category: "Poster", image: px(29708134, 900, 1150), alt: "Framed typographic wall art with botanical motif", ratio: "4 / 5", note: "Lettering practice · 2026", link: brand.instagramUrl },
+  { id: "s14", title: "Editorial layout study", category: "Poster", image: px(5490083, 1100, 850), alt: "Notebook and dried flowers flat lay for editorial layout", ratio: "4 / 3", note: "Layout practice · 2026", link: "https://www.instagram.com/p/DdGamwGukHU/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
+  { id: "s15", title: "Carousel template kit", category: "Social Media", image: px(7167825, 1100, 850), alt: "Cosy flat lay used in a social carousel design", ratio: "4 / 3", note: "Canva templates · 2026", link:"https://www.instagram.com/p/DdzLIiDDZ9e/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
+  { id: "s16", title: "Lettering on walls", category: "Poster", image: px(29708134, 900, 1150), alt: "Framed typographic wall art with botanical motif", ratio: "4 / 5", note: "Lettering practice · 2026", link: "https://www.instagram.com/p/DcwM8c1DnsV/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
 ];
-
 /* -------------------------------------------------------------------------- */
 /* CREATIVE PROCESS (how I work, even on practice projects)                    */
 /* -------------------------------------------------------------------------- */
