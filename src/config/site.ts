@@ -10,7 +10,7 @@
 
 import brandImg from "@/assets/desi.jpeg";
 import illustrationImg from "@/assets/work-illustration.jpg";
-import packagingImg from "@/assets/cuteout.jpeg";
+import packagingImg from "@/assets/cutout.jpeg";
 import posterImg from "@/assets/bwp.jpeg";
 import socialImg from "@/assets/05.jpeg";
 import uiuxImg from "@/assets/work-uiux.jpg";
