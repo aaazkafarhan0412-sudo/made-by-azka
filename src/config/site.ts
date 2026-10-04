@@ -19,9 +19,7 @@ import post2 from "@/assets/WhatsApp Image 2026-10-01 at 05.45.18AM.jpeg";
 import post3 from "@/assets/WhatsApp Image 2026-10-01 at 05.45.19AM.jpeg";
 import post4 from "@/assets/WhatsApp Image 2026-10-01 at 05.45.20AM.jpeg";
 
-/** Helper for stock photography. ✏️ Replace any `px(...)` call with your own file/URL. */
-const px = (id: number, w = 1200, h = 1500) =>
-  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=${w}&h=${h}`;
+
 
 /* -------------------------------------------------------------------------- */
 /* BRAND + CONTACT DETAILS                                                     */
