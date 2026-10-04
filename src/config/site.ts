@@ -14,10 +14,10 @@ import packagingImg from "@/assets/work-packaging.jpg";
 import posterImg from "@/assets/bwp.jpeg";
 import socialImg from "@/assets/05.jpeg";
 import uiuxImg from "@/assets/work-uiux.jpg";
-import post1 from "@/assets/WhatsApp Image 2026-10-01 at 05.45.11AM.jpeg";
-import post2 from "@/assets/WhatsApp Image 2026-10-01 at 05.45.18AM.jpeg";
-import post3 from "@/assets/WhatsApp Image 2026-10-01 at 05.45.19AM.jpeg";
-import post4 from "@/assets/WhatsApp Image 2026-10-01 at 05.45.20AM.jpeg";
+import post1 from "@/assets/01.jpeg";
+import post2 from "@/assets/02.jpeg";
+import post3 from "@/assets/02.jpeg";
+import post4 from "@/assets/03.jpeg";
 
 /** Helper for stock photography. ✏️ Replace any `px(...)` call with your own file/URL. */
 const px = (id: number, w = 1200, h = 1500) =>
