@@ -11,7 +11,7 @@
 import brandImg from "@/assets/desi.jpeg";
 import illustrationImg from "@/assets/work-illustration.jpg";
 import packagingImg from "@/assets/work-packaging.jpg";
-import posterImg from "@/bwp.jpeg";
+import posterImg from "@/assets/bwp.jpeg";
 import socialImg from "@/assets/05.jpeg";
 import uiuxImg from "@/assets/work-uiux.jpg";
 import post1 from "@/assets/WhatsApp Image 2026-10-01 at 05.45.11AM.jpeg";
