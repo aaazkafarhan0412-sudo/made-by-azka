@@ -8,11 +8,11 @@
    • Swap the logo   → edit src/components/Logo.tsx.
    ========================================================================== */
 
-import brandImg from "@/assets/work-brand.jpg";
+import brandImg from "@/assets/desi.jpeg";
 import illustrationImg from "@/assets/work-illustration.jpg";
 import packagingImg from "@/assets/work-packaging.jpg";
-import posterImg from "@/assets/work-poster.jpg";
-import socialImg from "@/assets/work-social.jpg";
+import posterImg from "@/bwp.jpeg";
+import socialImg from "@/assets/05.jpeg";
 import uiuxImg from "@/assets/work-uiux.jpg";
 import post1 from "@/assets/WhatsApp Image 2026-10-01 at 05.45.11AM.jpeg";
 import post2 from "@/assets/WhatsApp Image 2026-10-01 at 05.45.18AM.jpeg";
