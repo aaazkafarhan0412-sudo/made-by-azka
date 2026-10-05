@@ -13,7 +13,7 @@ import illustrationImg from "@/assets/typo.jpeg";
 import packagingImg from "@/assets/cutout.jpeg";
 import posterImg from "@/assets/bwp.jpeg";
 import socialImg from "@/assets/05.jpeg";
-import uiuxImg from "@/assets/work-uiux.jpg";
+import uiuxImg from "@/assets/001.jpeg";
 import post1 from "@/assets/01.jpeg";
 import post2 from "@/assets/02.jpeg";
 import post3 from "@/assets/02.jpeg";
@@ -340,7 +340,7 @@ export const showcase: ShowcaseItem[] = [
   { id: "s3", title: "Petal & Co. grid concept", category: "Social Media", image: socialImg, alt: "Nine-tile Instagram grid design concept for a beauty brand", ratio: "1 / 1", note: "9-tile grid · 2026", link: brand.instagramUrl },
   { id: "s4", title: "Wildflower illustration", category: "typo", image: illustrationImg, alt: "Hand-drawn botanical illustrations in dusty rose and plum", ratio: "3 / 4", note: "Ink & colour study · 2026", link: "https://www.instagram.com/p/DcwM8c1DnsV/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
   { id: "s5", title: "Cutout trends", category: "Illustration", image: packagingImg, alt: "purple landscape cutout", ratio: "4 / 3", note: "Packaging concept · 2026", link: brand.instagramUrl },
-  { id: "s6", title: "Muse app screens", category: "UI / UX", image: uiuxImg, alt: "App screens and components on a mauve artboard", ratio: "4 / 3", note: "Figma learning project · 2026", link: brand.instagramUrl },
+  { id: "s6", title: "Muse app screens", category: "desert deck", image: uiuxImg, alt: "App screens and components on a mauve artboard", ratio: "4 / 3", note: "Figma learning project · 2026", link: "https://www.instagram.com/p/DdKRKBbDtgh/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
   { id: "s7", title: "Stationery suite", category: "Branding", image: px(5706026, 900, 1150), alt: "Minimal stationery mockup on a pastel pink surface", ratio: "4 / 5", note: "Cards & letterhead · 2026", link: brand.instagramUrl },
   { id: "s8", title: "Mood board practice", category: "Branding", image: px(7598016, 900, 1150), alt: "Brand strategy documents and colour samples flat lay", ratio: "4 / 5", note: "Research & moodboard · 2026", link: brand.instagramUrl },
   { id: "s9", title: "Colour story", category: "Branding", image: px(7598069, 900, 1150), alt: "Pantone colour swatches fanned across a desk", ratio: "4 / 5", note: "Palette development · 2026", link: brand.instagramUrl },
