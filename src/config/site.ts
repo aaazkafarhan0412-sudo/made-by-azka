@@ -12,7 +12,7 @@ import brandImg from "@/assets/desi.jpeg";
 import illustrationImg from "@/assets/typo.jpeg";
 import packagingImg from "@/assets/cutout.jpeg";
 import posterImg from "@/assets/bwp.jpeg";
-import socialImg from "@/assets/05.jpeg";
+import socialImg from "@/assets/01.jpeg";
 import uiuxImg from "@/assets/001.jpeg";
 import post1 from "@/assets/01.jpeg";
 import post2 from "@/assets/02.jpeg";
@@ -337,7 +337,7 @@ export const showcaseCategories = [
 export const showcase: ShowcaseItem[] = [
   { id: "s1", title: "Lumière identity board", category: "Branding", image: brandImg, alt: "Concept brand identity board with logotype and swatches", ratio: "4 / 3", note: "Concept identity · 2026", link: "https://www.instagram.com/p/Db6VGysuh_e/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
   { id: "s2", title: "Bloom poster study", category: "Poster", image: posterImg, alt: "Typographic poster series in blush and plum", ratio: "3 / 4", note: "Typography practice · 2026", link: brand.instagramUrl },
-  { id: "s3", title: "Petal & Co. grid concept", category: "Social Media", image: socialImg, alt: "Nine-tile Instagram grid design concept for a beauty brand", ratio: "1 / 1", note: "9-tile grid · 2026", link: brand.instagramUrl },
+  { id: "s3", title: "Petal & Co. grid concept", category: "DESI word", image: socialImg, alt: "Nine-tile Instagram grid design concept for a beauty brand", ratio: "1 / 1", note: "9-tile grid · 2026", link: "https://www.instagram.com/p/DdzLIiDDZ9e/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
   { id: "s4", title: "Wildflower illustration", category: "typo", image: illustrationImg, alt: "Hand-drawn botanical illustrations in dusty rose and plum", ratio: "3 / 4", note: "Ink & colour study · 2026", link: "https://www.instagram.com/p/DcwM8c1DnsV/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
   { id: "s5", title: "Cutout trends", category: "Illustration", image: packagingImg, alt: "purple landscape cutout", ratio: "4 / 3", note: "Packaging concept · 2026", link: brand.instagramUrl },
   { id: "s6", title: "Muse app screens", category: "desert deck", image: uiuxImg, alt: "App screens and components on a mauve artboard", ratio: "4 / 3", note: "Figma learning project · 2026", link: "https://www.instagram.com/p/DdKRKBbDtgh/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==" },
